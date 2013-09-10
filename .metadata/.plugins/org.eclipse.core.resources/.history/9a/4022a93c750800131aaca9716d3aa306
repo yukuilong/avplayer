@@ -1,0 +1,9 @@
+package org.avplay;
+
+public class Avplayer {
+	
+	public static native void AvplayInit();
+	public static native void AvplayUninit();
+	public static native void AvplaySetWindowHandle(Object window);
+
+}

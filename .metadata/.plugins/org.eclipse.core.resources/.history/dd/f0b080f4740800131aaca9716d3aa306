@@ -1,0 +1,8 @@
+package org.avplay;
+
+public class Avplayer {
+	
+	public static native void AvplayInit();
+	public static native void AvplayUninit();
+
+}

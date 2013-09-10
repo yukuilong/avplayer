@@ -1,0 +1,191 @@
+#include <jni.h>
+#include <android/log.h>
+
+#include "player_impl.h"
+
+player_impl *g_avplay = NULL;
+
+JNIEXPORT jint JNICALL  JNI_OnLoad(JavaVM *ajvm, void *reserved)
+{
+	av_set_jvm(ajvm);
+	__android_log_print(ANDROID_LOG_INFO,"1234","fadf");
+	return JNI_VERSION_1_2;
+}
+
+JNIEXPORT void JNICALL Java_org_avplay_Avplayer_AvplayInit(JNIEnv * env, jobject obj)
+{
+	if(g_avplay == NULL)
+	{
+		g_avplay = new player_impl();
+	}
+}
+
+JNIEXPORT void JNICALL Java_org_avplay_Avplayer_AvplayUninit(JNIEnv * env, jobject obj)
+{
+	if(g_avplay)
+	{
+		delete g_avplay;
+		g_avplay = NULL;
+	}
+}
+
+JNIEXPORT void JNICALL Java_AvplaySetWindowHandle(JNIEnv * env, jobject obj,jobject window)
+{
+	g_avplay->set_window_handle((unsigned long)window);
+}
+
+JNIEXPORT jboolean JNICALL Java_AvplayOpen(JNIEnv * env , jobject obj,jstring movie, jint media_type, jint render_type)
+{
+	const char *str = env->GetStringUTFChars(movie, NULL);
+	return (unsigned char)g_avplay->open(str, media_type, render_type);
+}
+
+JNIEXPORT jboolean JNICALL Java_AvpalyPlay(JNIEnv * env, jobject obj,jdouble fact, jint index)
+{
+	return (unsigned char)g_avplay->play(fact, index);
+}
+
+JNIEXPORT jboolean JNICALL Java_AvplayPause(JNIEnv * env, jobject obj)
+{
+	return (unsigned char)g_avplay->pause();
+}
+
+JNIEXPORT jboolean JNICALL Java_AvplayResume(JNIEnv * env, jobject obj)
+{
+	return (unsigned char)g_avplay->resume();
+}
+
+JNIEXPORT jboolean JNICALL Java_AvplayWaitForCompletion(JNIEnv * env, jobject obj)
+{
+	return (unsigned char)g_avplay->wait_for_completion();
+}
+
+JNIEXPORT jboolean JNICALL Java_AvplayStop(JNIEnv * env, jobject obj)
+{
+	return (unsigned char)g_avplay->stop();
+}
+
+JNIEXPORT jboolean JNICALL Java_AvplayClose(JNIEnv * env, jobject obj)
+{
+	return (unsigned char)g_avplay->close();
+}
+
+JNIEXPORT void JNICALL Java_AvplaySeekTo(JNIEnv * env, jobject obj,jdouble fact)
+{
+	g_avplay->seek_to(fact);
+}
+
+JNIEXPORT void JNICALL Java_AvplayVolume(JNIEnv * env, jobject obj,jdouble l, jdouble r)
+{
+	g_avplay->volume(l, r);
+}
+
+JNIEXPORT void JNICALL Java_AvplayMuteSet(JNIEnv * env, jobject obj,jboolean s)
+{
+	g_avplay->mute_set(s);
+}
+
+JNIEXPORT jint JNICALL Java_AvplayDownloadRate(JNIEnv * env, jobject obj)
+{
+	return g_avplay->download_rate();
+}
+
+JNIEXPORT void JNICALL Java_AvplaySetDownloadRate(JNIEnv * env, jobject obj,jint k)
+{
+	g_avplay->set_download_rate(k);
+}
+
+JNIEXPORT jdouble JNICALL Java_AvplayCurrPlayTime(JNIEnv * env, jobject obj)
+{
+	return g_avplay->curr_play_time();
+}
+
+JNIEXPORT jdouble JNICALL Java_AvplayDuration(JNIEnv * env, jobject obj)
+{
+	return g_avplay->duration();
+}
+
+JNIEXPORT jint JNICALL Java_AvplayVideoWidth(JNIEnv * env, jobject obj)
+{
+	return g_avplay->video_width();
+}
+
+JNIEXPORT jint JNICALL Java_AvplayVideoHeight(JNIEnv * env, jobject obj)
+{
+	return g_avplay->video_height();
+}
+
+JNIEXPORT jdouble JNICALL Java_AvplayBuffering(JNIEnv * env, jobject obj)
+{
+	return g_avplay->buffering();
+}
+
+JNIEXPORT jint JNICALL Java_AvplayMediaCount(JNIEnv * env, jobject obj)
+{
+	return g_avplay->play_list().size();
+}
+
+JNIEXPORT jint JNICALL Java_AvplayMediaList(JNIEnv * env, jobject obj,char ***list, jint *size)
+{
+	std::map<std::string, std::string> mlist = g_avplay->play_list();
+
+	*size = mlist.size();
+	char **temp = new char*[*size];
+
+	int n = 0;
+	for (std::map<std::string, std::string>::iterator i = mlist.begin();
+		i != mlist.end(); i++)
+	{
+		char *file_name = strdup(i->second.c_str());
+		temp[n] = file_name;
+	}
+	*list = temp;
+
+	return*size;
+}
+
+JNIEXPORT void JNICALL Java_AvplayFreeMediaList(JNIEnv * env, jobject obj,char **list, jint size)
+{
+	for (int i = 0; i < size; i++)
+		free(list[i]);
+	delete[] list;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

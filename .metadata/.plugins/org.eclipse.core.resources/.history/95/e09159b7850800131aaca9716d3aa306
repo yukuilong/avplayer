@@ -1,0 +1,59 @@
+package org.avplay.android;
+
+import org.avplay.Avplayer;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.util.Log;
+import android.view.Menu;
+
+public class AVPalyActivity extends Activity {
+
+	public Avplayer avplayer;
+	
+	 static {
+ 		// openssl
+ 		loadOptionalLibrary("crypto");
+ 		loadOptionalLibrary("ssl");
+ 		//ffmpeg
+ 		/*loadOptionalLibrary("avutil-2.0");
+ 		loadOptionalLibrary("avcodec-2.0");
+ 		loadOptionalLibrary("avformat-2.0");
+ 		loadOptionalLibrary("swscale-2.0");
+ 		loadOptionalLibrary("swresample-2.0");*/
+  
+ 		// Main library
+ 		//System.loadLibrary("av");
+ 		//System.loadLibrary("source");
+ 		//System.loadLibrary("demux");
+ 		//System.loadLibrary("video");
+ 		//System.loadLibrary("audio");
+ 		//System.loadLibrary("core");
+ 		
+ 	}
+	
+	
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_avpaly);
+        
+    
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.activity_avpaly, menu);
+        return true;
+    }
+    
+    private static void loadOptionalLibrary(String s) {
+		try {
+			System.loadLibrary(s);
+		} catch (Throwable e) {
+			Log.w("Unable to load optional library lib", s);
+		}
+	}
+    
+}

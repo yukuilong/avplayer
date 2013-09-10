@@ -1,0 +1,395 @@
+﻿生成启动时间为 2013/7/23 14:47:31。
+     1>项目“F:\avplayer\libtorrent\include\libtorrent.vcxproj”在节点 3 上(rebuild 个目标)。
+     1>_PrepareForClean:
+         正在删除文件“Release\libtorrent.lastbuildstate”。
+       InitializeBuildStatus:
+         正在创建“Release\libtorrent.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I. /I.\libtorrent /I..\..\third_party\openssl\include /Zi /nologo /W3 /WX- /O2 /Oy- /GL /D WIN32 /D NDEBUG /D _LIB /D _WIN32_WINNT=0x0501 /D WIN32_LEAN_AND_MEAN /D _CRT_SECURE_NO_WARNINGS /D BOOST_ASIO_ENABLE_CANCELIO /D BOOST_ASIO_DYN_LINK /D TORRENT_USE_OPENSSL /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\alert.cpp ..\src\allocator.cpp ..\src\assert.cpp ..\src\bandwidth_limit.cpp ..\src\bandwidth_manager.cpp ..\src\bandwidth_queue_entry.cpp ..\src\bloom_filter.cpp ..\src\broadcast_socket.cpp ..\src\bt_peer_connection.cpp ..\src\chained_buffer.cpp ..\src\connection_queue.cpp ..\src\ConvertUTF.cpp ..\src\create_torrent.cpp ..\src\disk_buffer_holder.cpp ..\src\disk_buffer_pool.cpp ..\src\disk_io_thread.cpp ..\src\entry.cpp ..\src\enum_net.cpp ..\src\error_code.cpp ..\src\escape_string.cpp ..\src\file.cpp ..\src\file_pool.cpp ..\src\file_storage.cpp ..\src\gzip.cpp ..\src\http_connection.cpp ..\src\http_parser.cpp ..\src\http_seed_connection.cpp ..\src\http_stream.cpp ..\src\http_tracker_connection.cpp ..\src\i2p_stream.cpp ..\src\identify_client.cpp ..\src\instantiate_connection.cpp ..\src\ip_filter.cpp ..\src\ip_voter.cpp ..\src\lazy_bdecode.cpp ..\src\logger.cpp ..\src\lsd.cpp ..\src\lt_trackers.cpp ..\src\magnet_uri.cpp ..\src\metadata_transfer.cpp ..\src\natpmp.cpp ..\src\packet_buffer.cpp ..\src\parse_url.cpp ..\src\pe_crypto.cpp ..\src\peer_connection.cpp ..\src\piece_picker.cpp ..\src\policy.cpp ..\src\puff.cpp ..\src\random.cpp ..\src\rsa.cpp ..\src\rss.cpp ..\src\session.cpp ..\src\session_impl.cpp ..\src\settings.cpp ..\src\sha1.cpp ..\src\smart_ban.cpp ..\src\socket_io.cpp ..\src\socket_type.cpp ..\src\socks5_stream.cpp ..\src\stat.cpp ..\src\storage.cpp ..\src\string_util.cpp ..\src\thread.cpp ..\src\time.cpp ..\src\timestamp_history.cpp ..\src\torrent.cpp ..\src\torrent_handle.cpp ..\src\torrent_info.cpp ..\src\tracker_manager.cpp ..\src\udp_socket.cpp ..\src\udp_tracker_connection.cpp ..\src\upnp.cpp ..\src\ut_metadata.cpp ..\src\ut_pex.cpp ..\src\utf8.cpp ..\src\utp_socket_manager.cpp ..\src\utp_stream.cpp ..\src\web_connection_base.cpp ..\src\web_peer_connection.cpp ..\src\kademlia\dht_tracker.cpp ..\src\kademlia\find_data.cpp ..\src\kademlia\node.cpp ..\src\kademlia\node_id.cpp ..\src\kademlia\refresh.cpp ..\src\kademlia\routing_table.cpp ..\src\kademlia\rpc_manager.cpp ..\src\kademlia\traversal_algorithm.cpp
+         alert.cpp
+     1>F:\avplayer\libtorrent\include\libtorrent/alert.hpp(155): warning C4800: “const uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+         allocator.cpp
+         assert.cpp
+         bandwidth_limit.cpp
+         bandwidth_manager.cpp
+         bandwidth_queue_entry.cpp
+         bloom_filter.cpp
+         broadcast_socket.cpp
+     1>..\src\broadcast_socket.cpp(81): warning C4101: “e”: 未引用的局部变量
+     1>..\src\broadcast_socket.cpp(92): warning C4101: “e”: 未引用的局部变量
+     1>..\src\broadcast_socket.cpp(106): warning C4101: “e”: 未引用的局部变量
+     1>..\src\broadcast_socket.cpp(125): warning C4101: “e”: 未引用的局部变量
+     1>..\src\broadcast_socket.cpp(136): warning C4101: “e”: 未引用的局部变量
+     1>..\src\broadcast_socket.cpp(149): warning C4101: “e”: 未引用的局部变量
+         bt_peer_connection.cpp
+     1>F:\avplayer\libtorrent\include\libtorrent/alert.hpp(155): warning C4800: “const uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(462): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(465): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+         chained_buffer.cpp
+         connection_queue.cpp
+         ConvertUTF.cpp
+         create_torrent.cpp
+         disk_buffer_holder.cpp
+     1>F:\avplayer\libtorrent\include\libtorrent/alert.hpp(155): warning C4800: “const uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(462): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(465): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+         disk_buffer_pool.cpp
+         disk_io_thread.cpp
+     1>..\src\disk_io_thread.cpp(90): warning C4355: “this”: 用于基成员初始值设定项列表
+     1>..\src\disk_io_thread.cpp(678): warning C4244: “参数”: 从“int64_t”转换到“int”，可能丢失数据
+     1>..\src\disk_io_thread.cpp(1308): warning C4101: “e”: 未引用的局部变量
+     1>..\src\disk_io_thread.cpp(1358): warning C4244: “return”: 从“libtorrent::size_type”转换到“int”，可能丢失数据
+     1>..\src\disk_io_thread.cpp(1431): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\disk_io_thread.cpp(1443): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\disk_io_thread.cpp(1578): warning C4018: “>”: 有符号/无符号不匹配
+     1>..\src\disk_io_thread.cpp(1673): warning C4244: “参数”: 从“int64_t”转换到“int”，可能丢失数据
+     1>..\src\disk_io_thread.cpp(1674): warning C4244: “参数”: 从“int64_t”转换到“int”，可能丢失数据
+     1>..\src\disk_io_thread.cpp(1728): warning C4244: “参数”: 从“int64_t”转换到“int”，可能丢失数据
+     1>..\src\disk_io_thread.cpp(1798): warning C4244: “=”: 从“uint64_t”转换到“int”，可能丢失数据
+     1>..\src\disk_io_thread.cpp(2045): warning C4244: “参数”: 从“int64_t”转换到“int”，可能丢失数据
+     1>..\src\disk_io_thread.cpp(2141): warning C4244: “参数”: 从“int64_t”转换到“int”，可能丢失数据
+     1>..\src\disk_io_thread.cpp(2233): warning C4244: “参数”: 从“int64_t”转换到“int”，可能丢失数据
+     1>..\src\disk_io_thread.cpp(2396): warning C4244: “参数”: 从“int64_t”转换到“int”，可能丢失数据
+     1>..\src\disk_io_thread.cpp(2460): warning C4244: “参数”: 从“int64_t”转换到“int”，可能丢失数据
+         entry.cpp
+         enum_net.cpp
+     1>..\src\enum_net.cpp(978): warning C4018: “<”: 有符号/无符号不匹配
+         error_code.cpp
+         escape_string.cpp
+     1>..\src\escape_string.cpp(77): warning C4146: 一元负运算符应用于无符号类型，结果仍为无符号类型
+         正在编译...
+         file.cpp
+     1>..\src\file.cpp(153): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\file.cpp(445): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\file.cpp(1003): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\file.cpp(1214): warning C4305: “return”: 从“int”到“bool”截断
+     1>..\src\file.cpp(1217): warning C4305: “return”: 从“int”到“bool”截断
+     1>..\src\file.cpp(1266): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+         file_pool.cpp
+         file_storage.cpp
+     1>..\src\file_storage.cpp(310): warning C4244: “=”: 从“libtorrent::size_type”转换到“int”，可能丢失数据
+         gzip.cpp
+         http_connection.cpp
+         http_parser.cpp
+         http_seed_connection.cpp
+     1>F:\avplayer\libtorrent\include\libtorrent/alert.hpp(155): warning C4800: “const uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(462): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(465): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+         http_stream.cpp
+         http_tracker_connection.cpp
+     1>F:\avplayer\libtorrent\include\libtorrent/alert.hpp(155): warning C4800: “const uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(462): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(465): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+         i2p_stream.cpp
+         identify_client.cpp
+         instantiate_connection.cpp
+         ip_filter.cpp
+         ip_voter.cpp
+         lazy_bdecode.cpp
+         logger.cpp
+     1>F:\avplayer\libtorrent\include\libtorrent/alert.hpp(155): warning C4800: “const uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+         lsd.cpp
+         lt_trackers.cpp
+     1>F:\avplayer\libtorrent\include\libtorrent/alert.hpp(155): warning C4800: “const uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(462): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(465): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+         magnet_uri.cpp
+     1>F:\avplayer\libtorrent\include\libtorrent/alert.hpp(155): warning C4800: “const uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+         metadata_transfer.cpp
+     1>F:\avplayer\libtorrent\include\libtorrent/alert.hpp(155): warning C4800: “const uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(462): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(465): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+         正在编译...
+         natpmp.cpp
+         packet_buffer.cpp
+         parse_url.cpp
+         pe_crypto.cpp
+         peer_connection.cpp
+     1>F:\avplayer\libtorrent\include\libtorrent/alert.hpp(155): warning C4800: “const uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(462): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(465): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\peer_connection.cpp(4077): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\peer_connection.cpp(4429): warning C4244: “初始化”: 从“uint64_t”转换到“int”，可能丢失数据
+         piece_picker.cpp
+     1>..\src\piece_picker.cpp(1491): warning C4018: “>”: 有符号/无符号不匹配
+     1>..\src\piece_picker.cpp(1530): warning C4018: “>=”: 有符号/无符号不匹配
+     1>..\src\piece_picker.cpp(1530): warning C4018: “>=”: 有符号/无符号不匹配
+     1>..\src\piece_picker.cpp(1567): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\piece_picker.cpp(1573): warning C4018: “<”: 有符号/无符号不匹配
+         policy.cpp
+     1>F:\avplayer\libtorrent\include\libtorrent/alert.hpp(155): warning C4800: “const uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(462): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(465): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\policy.cpp(485): warning C4018: “<”: 有符号/无符号不匹配
+         puff.cpp
+         random.cpp
+         rsa.cpp
+     1>..\src\rsa.cpp(88): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+         rss.cpp
+     1>F:\avplayer\libtorrent\include\libtorrent/alert.hpp(155): warning C4800: “const uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(462): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(465): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\rss.cpp(611): warning C4244: “return”: 从“time_t”转换到“int”，可能丢失数据
+         session.cpp
+     1>F:\avplayer\libtorrent\include\libtorrent/alert.hpp(155): warning C4800: “const uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(462): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(465): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\session.cpp(94): warning C4535: 调用 _set_se_translator() 需要 /EHa
+         session_impl.cpp
+     1>F:\avplayer\libtorrent\include\libtorrent/alert.hpp(155): warning C4800: “const uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(462): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(465): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\session_impl.cpp(614): warning C4355: “this”: 用于基成员初始值设定项列表
+     1>..\src\session_impl.cpp(622): warning C4355: “this”: 用于基成员初始值设定项列表
+     1>..\src\session_impl.cpp(657): warning C4355: “this”: 用于基成员初始值设定项列表
+     1>..\src\session_impl.cpp(1524): warning C4244: “=”: 从“libtorrent::size_type”转换到“int”，可能丢失数据
+         settings.cpp
+         sha1.cpp
+         smart_ban.cpp
+     1>F:\avplayer\libtorrent\include\libtorrent/alert.hpp(155): warning C4800: “const uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(462): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(465): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+         socket_io.cpp
+         socket_type.cpp
+         socks5_stream.cpp
+         stat.cpp
+         正在编译...
+         storage.cpp
+     1>F:\avplayer\libtorrent\include\libtorrent/alert.hpp(155): warning C4800: “const uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(462): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(465): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+         string_util.cpp
+         thread.cpp
+         time.cpp
+         timestamp_history.cpp
+         torrent.cpp
+     1>F:\avplayer\libtorrent\include\libtorrent/alert.hpp(155): warning C4800: “const uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(462): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(465): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\torrent.cpp(166): warning C4244: “return”: 从“const libtorrent::size_type”转换到“uint32_t”，可能丢失数据
+     1>..\src\torrent.cpp(345): warning C4355: “this”: 用于基成员初始值设定项列表
+     1>..\src\torrent.cpp(431): warning C4800: “const uint64_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\torrent.cpp(431): warning C4800: “const uint64_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\torrent.cpp(431): warning C4800: “const uint64_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\torrent.cpp(431): warning C4800: “const uint64_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\torrent.cpp(431): warning C4800: “const uint64_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\torrent.cpp(431): warning C4800: “const uint64_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\torrent.cpp(431): warning C4800: “const uint64_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\torrent.cpp(1646): warning C4018: “>”: 有符号/无符号不匹配
+     1>..\src\torrent.cpp(1775): warning C4244: “+=”: 从“const libtorrent::size_type”转换到“unsigned int”，可能丢失数据
+     1>..\src\torrent.cpp(1777): warning C4244: “参数”: 从“libtorrent::size_type”转换到“int”，可能丢失数据
+     1>..\src\torrent.cpp(1935): warning C4244: “初始化”: 从“libtorrent::size_type”转换到“int”，可能丢失数据
+     1>..\src\torrent.cpp(1952): warning C4244: “初始化”: 从“libtorrent::size_type”转换到“int”，可能丢失数据
+     1>..\src\torrent.cpp(2012): warning C4244: “初始化”: 从“libtorrent::size_type”转换到“int”，可能丢失数据
+     1>..\src\torrent.cpp(2028): warning C4244: “初始化”: 从“libtorrent::size_type”转换到“int”，可能丢失数据
+     1>..\src\torrent.cpp(2965): warning C4244: “+=”: 从“libtorrent::size_type”转换到“int”，可能丢失数据
+     1>..\src\torrent.cpp(3291): warning C4244: “初始化”: 从“const libtorrent::size_type”转换到“int”，可能丢失数据
+     1>..\src\torrent.cpp(4112): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\torrent.cpp(4133): warning C4018: “<=”: 有符号/无符号不匹配
+     1>..\src\torrent.cpp(4151): warning C4018: “<=”: 有符号/无符号不匹配
+     1>..\src\torrent.cpp(4567): warning C4244: “+=”: 从“libtorrent::size_type”转换到“uint32_t”，可能丢失数据
+     1>..\src\torrent.cpp(4568): warning C4244: “+=”: 从“libtorrent::size_type”转换到“uint32_t”，可能丢失数据
+     1>..\src\torrent.cpp(5179): warning C4244: “参数”: 从“libtorrent::size_type”转换到“int”，可能丢失数据
+     1>..\src\torrent.cpp(5180): warning C4244: “参数”: 从“libtorrent::size_type”转换到“int”，可能丢失数据
+     1>..\src\torrent.cpp(5181): warning C4244: “参数”: 从“libtorrent::size_type”转换到“int”，可能丢失数据
+     1>..\src\torrent.cpp(5182): warning C4244: “参数”: 从“libtorrent::size_type”转换到“int”，可能丢失数据
+     1>..\src\torrent.cpp(5185): warning C4800: “libtorrent::size_type”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\torrent.cpp(5187): warning C4244: “=”: 从“libtorrent::size_type”转换到“uint16_t”，可能丢失数据
+     1>..\src\torrent.cpp(5231): warning C4244: “=”: 从“libtorrent::size_type”转换到“unsigned char”，可能丢失数据
+     1>..\src\torrent.cpp(5247): warning C4244: “初始化”: 从“libtorrent::size_type”转换到“int”，可能丢失数据
+     1>..\src\torrent.cpp(5248): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\torrent.cpp(5251): warning C4244: “初始化”: 从“libtorrent::size_type”转换到“int”，可能丢失数据
+     1>..\src\torrent.cpp(5252): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\torrent.cpp(5256): warning C4244: “初始化”: 从“libtorrent::size_type”转换到“int”，可能丢失数据
+     1>..\src\torrent.cpp(5264): warning C4244: “初始化”: 从“libtorrent::size_type”转换到“int”，可能丢失数据
+     1>..\src\torrent.cpp(5265): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\torrent.cpp(5266): warning C4244: “初始化”: 从“libtorrent::size_type”转换到“int”，可能丢失数据
+     1>..\src\torrent.cpp(5267): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\torrent.cpp(5268): warning C4244: “初始化”: 从“libtorrent::size_type”转换到“int”，可能丢失数据
+     1>..\src\torrent.cpp(5269): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\torrent.cpp(5937): warning C4800: “libtorrent::peer_connection *”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\torrent.cpp(6107): warning C4018: “>”: 有符号/无符号不匹配
+     1>..\src\torrent.cpp(8806): warning C4800: “uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\torrent.cpp(8903): warning C4244: “=”: 从“libtorrent::size_type”转换到“int”，可能丢失数据
+         torrent_handle.cpp
+     1>..\src\torrent_handle.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>F:\avplayer\libtorrent\include\libtorrent/alert.hpp(155): warning C4800: “const uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(462): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(465): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+         torrent_info.cpp
+     1>..\src\torrent_info.cpp(466): warning C4244: “参数”: 从“libtorrent::size_type”转换到“unsigned int”，可能丢失数据
+     1>..\src\torrent_info.cpp(854): warning C4800: “uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\torrent_info.cpp(855): warning C4800: “uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\torrent_info.cpp(856): warning C4800: “uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\torrent_info.cpp(894): warning C4244: “初始化”: 从“libtorrent::size_type”转换到“int”，可能丢失数据
+     1>..\src\torrent_info.cpp(1028): warning C4800: “libtorrent::size_type”: 将值强制为布尔值“true”或“false”(性能警告)
+         tracker_manager.cpp
+     1>F:\avplayer\libtorrent\include\libtorrent/alert.hpp(155): warning C4800: “const uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(462): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(465): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+         udp_socket.cpp
+     1>..\src\udp_socket.cpp(1362): warning C4244: “+=”: 从“uint64_t”转换到“int”，可能丢失数据
+         udp_tracker_connection.cpp
+     1>F:\avplayer\libtorrent\include\libtorrent/alert.hpp(155): warning C4800: “const uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(462): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(465): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+         upnp.cpp
+         ut_metadata.cpp
+     1>F:\avplayer\libtorrent\include\libtorrent/alert.hpp(155): warning C4800: “const uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(462): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(465): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\ut_metadata.cpp(221): warning C4244: “初始化”: 从“libtorrent::size_type”转换到“int”，可能丢失数据
+     1>..\src\ut_metadata.cpp(225): warning C4244: “初始化”: 从“libtorrent::size_type”转换到“int”，可能丢失数据
+     1>..\src\ut_metadata.cpp(332): warning C4244: “初始化”: 从“const libtorrent::entry::integer_type”转换到“int”，可能丢失数据
+     1>..\src\ut_metadata.cpp(333): warning C4244: “初始化”: 从“const libtorrent::entry::integer_type”转换到“int”，可能丢失数据
+     1>..\src\ut_metadata.cpp(373): warning C4244: “参数”: 从“const libtorrent::entry::integer_type”转换到“int”，可能丢失数据
+         ut_pex.cpp
+     1>F:\avplayer\libtorrent\include\libtorrent/alert.hpp(155): warning C4800: “const uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(462): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(465): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+         utf8.cpp
+         utp_socket_manager.cpp
+     1>..\src\utp_socket_manager.cpp(318): warning C4018: “>”: 有符号/无符号不匹配
+         utp_stream.cpp
+     1>..\src\utp_stream.cpp(164): warning C4200: 使用了非标准扩展 : 结构/联合中的零大小数组
+                 当 UDT 包含大小为零的数组时，无法生成复制构造函数或副本赋值运算符
+     1>..\src\utp_stream.cpp(2645): warning C4018: “>”: 有符号/无符号不匹配
+         web_connection_base.cpp
+     1>F:\avplayer\libtorrent\include\libtorrent/alert.hpp(155): warning C4800: “const uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(462): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(465): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+         web_peer_connection.cpp
+     1>F:\avplayer\libtorrent\include\libtorrent/alert.hpp(155): warning C4800: “const uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(462): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(465): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\web_peer_connection.cpp(343): warning C4244: “初始化”: 从“libtorrent::size_type”转换到“int”，可能丢失数据
+     1>..\src\web_peer_connection.cpp(345): warning C4244: “初始化”: 从“libtorrent::size_type”转换到“int”，可能丢失数据
+     1>..\src\web_peer_connection.cpp(763): warning C4244: “=”: 从“libtorrent::size_type”转换到“int”，可能丢失数据
+     1>..\src\web_peer_connection.cpp(879): warning C4244: “初始化”: 从“const libtorrent::size_type”转换到“int”，可能丢失数据
+         dht_tracker.cpp
+     1>F:\avplayer\libtorrent\include\libtorrent/alert.hpp(155): warning C4800: “const uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(462): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(465): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\kademlia\dht_tracker.cpp(205): warning C4355: “this”: 用于基成员初始值设定项列表
+         正在编译...
+         find_data.cpp
+         node.cpp
+     1>F:\avplayer\libtorrent\include\libtorrent/alert.hpp(155): warning C4800: “const uint32_t”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(462): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>F:\avplayer\libtorrent\include\libtorrent/aux_/session_impl.hpp(465): warning C4800: “GeoIP *const ”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\src\kademlia\node.cpp(917): warning C4244: “=”: 从“libtorrent::size_type”转换到“int”，可能丢失数据
+     1>..\src\kademlia\node.cpp(946): warning C4244: “=”: 从“libtorrent::size_type”转换到“int”，可能丢失数据
+         node_id.cpp
+         refresh.cpp
+         routing_table.cpp
+     1>..\src\kademlia\routing_table.cpp(653): warning C4018: “>”: 有符号/无符号不匹配
+         rpc_manager.cpp
+     1>..\src\kademlia\rpc_manager.cpp(174): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+         traversal_algorithm.cpp
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I. /I.\libtorrent /I..\..\third_party\openssl\include /Zi /nologo /W3 /WX- /O2 /Oy- /GL /D WIN32 /D NDEBUG /D _LIB /D _WIN32_WINNT=0x0501 /D WIN32_LEAN_AND_MEAN /D _CRT_SECURE_NO_WARNINGS /D BOOST_ASIO_ENABLE_CANCELIO /D BOOST_ASIO_DYN_LINK /D TORRENT_USE_OPENSSL /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\src\GeoIP.c ..\src\mpi.c
+         GeoIP.c
+     1>..\src\GeoIP.c(589): warning C4996: 'fileno': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _fileno. See online help for details.
+                 c:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdio.h(723) : 参见“fileno”的声明
+     1>..\src\GeoIP.c(624): warning C4996: 'fileno': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _fileno. See online help for details.
+                 c:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdio.h(723) : 参见“fileno”的声明
+         mpi.c
+       Lib:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"F:\avplayer\Release\libtorrent.lib" libeay32.lib ssleay32.lib /LIBPATH:..\..\third_party\openssl\libs /NOLOGO /LTCG Release\alert.obj
+         Release\allocator.obj
+         Release\assert.obj
+         Release\bandwidth_limit.obj
+         Release\bandwidth_manager.obj
+         Release\bandwidth_queue_entry.obj
+         Release\bloom_filter.obj
+         Release\broadcast_socket.obj
+         Release\bt_peer_connection.obj
+         Release\chained_buffer.obj
+         Release\connection_queue.obj
+         Release\ConvertUTF.obj
+         Release\create_torrent.obj
+         Release\disk_buffer_holder.obj
+         Release\disk_buffer_pool.obj
+         Release\disk_io_thread.obj
+         Release\entry.obj
+         Release\enum_net.obj
+         Release\error_code.obj
+         Release\escape_string.obj
+         Release\file.obj
+         Release\file_pool.obj
+         Release\file_storage.obj
+         Release\GeoIP.obj
+         Release\gzip.obj
+         Release\http_connection.obj
+         Release\http_parser.obj
+         Release\http_seed_connection.obj
+         Release\http_stream.obj
+         Release\http_tracker_connection.obj
+         Release\i2p_stream.obj
+         Release\identify_client.obj
+         Release\instantiate_connection.obj
+         Release\ip_filter.obj
+         Release\ip_voter.obj
+         Release\lazy_bdecode.obj
+         Release\logger.obj
+         Release\lsd.obj
+         Release\lt_trackers.obj
+         Release\magnet_uri.obj
+         Release\metadata_transfer.obj
+         Release\mpi.obj
+         Release\natpmp.obj
+         Release\packet_buffer.obj
+         Release\parse_url.obj
+         Release\pe_crypto.obj
+         Release\peer_connection.obj
+         Release\piece_picker.obj
+         Release\policy.obj
+         Release\puff.obj
+         Release\random.obj
+         Release\rsa.obj
+         Release\rss.obj
+         Release\session.obj
+         Release\session_impl.obj
+         Release\settings.obj
+         Release\sha1.obj
+         Release\smart_ban.obj
+         Release\socket_io.obj
+         Release\socket_type.obj
+         Release\socks5_stream.obj
+         Release\stat.obj
+         Release\storage.obj
+         Release\string_util.obj
+         Release\thread.obj
+         Release\time.obj
+         Release\timestamp_history.obj
+         Release\torrent.obj
+         Release\torrent_handle.obj
+         Release\torrent_info.obj
+         Release\tracker_manager.obj
+         Release\udp_socket.obj
+         Release\udp_tracker_connection.obj
+         Release\upnp.obj
+         Release\ut_metadata.obj
+         Release\ut_pex.obj
+         Release\utf8.obj
+         Release\utp_socket_manager.obj
+         Release\utp_stream.obj
+         Release\web_connection_base.obj
+         Release\web_peer_connection.obj
+         Release\dht_tracker.obj
+         Release\find_data.obj
+         Release\node.obj
+         Release\node_id.obj
+         Release\refresh.obj
+         Release\routing_table.obj
+         Release\rpc_manager.obj
+         Release\traversal_algorithm.obj
+     1>ssleay32.lib(SSLEAY32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR 已在 libeay32.lib(LIBEAY32.dll) 中定义；已忽略第二个定义
+         libtorrent.vcxproj -> F:\avplayer\Release\libtorrent.lib
+       FinalizeBuildStatus:
+         正在删除文件“Release\libtorrent.unsuccessfulbuild”。
+         正在对“Release\libtorrent.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“F:\avplayer\libtorrent\include\libtorrent.vcxproj”(rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:03:42.31

@@ -1,0 +1,15 @@
+package org.avplay;
+
+import android.R.string;
+
+public class Avplayer {
+	
+	public static native void AvplayInit();
+	public static native void AvplayUninit();
+	public static native void AvplaySetWindowHandle(Object window);
+	public static native boolean AvplayOpen(string movie, int media_type, int render_type);
+	public static native boolean AvpalyPlay(double fact, int index);
+	public static native boolean AvplayPause();
+	public static native boolean  AvplayResume();
+
+}
